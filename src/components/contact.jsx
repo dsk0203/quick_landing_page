@@ -18,9 +18,11 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(name, email, message)
+    console.log('dog')
+    console.log(e.target)
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'service_6caj6aj', 'template_pvbjq6c', e.target, 'user_47gDlkkxVJQm2Sfh5RcLI'
       )
       .then(
         (result) => {
@@ -39,10 +41,12 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>Let's Stay in touch</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Our team is working tirelessly on the release. 
+                  Sign up for this pre-release get an email to sign-up once it's ready.
+                  Beta users will get exclusive deals on any premium features.
+                  Don't miss out.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -76,7 +80,7 @@ export const Contact = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className='form-group'>
+                {/* <div className='form-group'>
                   <textarea
                     name='message'
                     id='message'
@@ -87,15 +91,15 @@ export const Contact = (props) => {
                     onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
-                </div>
+                </div> */}
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  I'm in >>
                 </button>
               </form>
             </div>
           </div>
-          <div className='col-md-3 col-md-offset-1 contact-info'>
+          {/* <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
               <h3>Contact Info</h3>
               <p>
@@ -121,8 +125,8 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : 'loading'}
               </p>
             </div>
-          </div>
-          <div className='col-md-12'>
+          </div> */}
+          {/* <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
                 <ul>
@@ -144,13 +148,13 @@ export const Contact = (props) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
+            &copy; AI Meets Newsletter. Skeleton Design by{' '}
             <a href='http://www.templatewire.com' rel='nofollow'>
               TemplateWire
             </a>
