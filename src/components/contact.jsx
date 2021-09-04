@@ -43,10 +43,9 @@ export const Contact = (props) => {
               <div className='section-title'>
                 <h2>Let's Stay in touch</h2>
                 <p>
-                  Our team is working tirelessly on the release. 
-                  Sign up for this pre-release get an email to sign-up once it's ready.
-                  Beta users will get exclusive deals on any premium features.
-                  Don't miss out.
+                  Our team is working on perfecting the release. 
+                  Sign up for this pre-release to get on our early access sign-up list.
+                  These users will get exclusive deals on future premium features.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
