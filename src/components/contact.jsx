@@ -153,7 +153,7 @@ export const Contact = (props) => {
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            &copy; AI Meets Newsletter. Skeleton Design by{' '}
+            &copy; Break into DS. Skeleton Design by{' '}
             <a href='http://www.templatewire.com' rel='nofollow'>
               TemplateWire
             </a>
